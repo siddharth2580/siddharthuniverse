@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Siddharth</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HARVARD STYLE STICKY HEADER -->
+    <header id="mainHeader">
+      <a class="brand-logo view-switch-link" data-target="mainView">
+        <div class="crest-box">SS</div>
+        <div class="brand-text">
+          <span class="brand-title">SIDDHARTH</span>
+          <span class="brand-subtitle">UNIVERSE</span>
+        </div>
+      </a>
+
+      <!-- HARVARD SCROLL TICKER BANNER -->
+      <div class="header-ticker-banner" id="headerTicker">
+        <span class="ticker-dot"></span>
+        <span class="ticker-text"
+          >Exploring new digital realities & high-impact engineered
+          systems</span
+        >
+      </div>
+
+      <div class="header-actions">
+        <button class="action-btn search-btn" id="searchTrigger" type="button">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+        </button>
+
+        <button class="action-btn menu-btn" id="menuTrigger" type="button">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+          >
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <span>Menu</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- SEARCH DROPDOWN OVERLAY -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box-container">
+        <div class="search-input-wrapper">
+          <input
+            type="text"
+            placeholder="Search Siddharth Universe..."
+            id="searchInput"
+            autocomplete="off"
+          />
+          <button class="close-circle-btn" id="closeSearch" type="button">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="search-quick-links">
+          <span class="quick-title">QUICK LINKS</span>
+          <div class="quick-tags">
+            <a class="view-switch-link" data-target="academicsView"
+              >Academics & Life</a
+            >
+            <a href="#projects" class="smooth-link">Engineered Systems</a>
+            <a href="#philosophy" class="smooth-link">Core Philosophy</a>
+            <a href="#achievements" class="smooth-link">Impact & Learning</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HARVARD DUAL-COLUMN MEGA MENU OVERLAY -->
+    <div class="menu-overlay" id="menuOverlay">
+      <div class="menu-header">
+        <a
+          class="brand-logo white-logo view-switch-link"
+          data-target="mainView"
+        >
+          <div class="crest-box">SS</div>
+          <div class="brand-text">
+            <span class="brand-title">SIDDHARTH</span>
+            <span class="brand-subtitle">UNIVERSE</span>
+          </div>
+        </a>
+        <button class="close-menu-btn" id="closeMenu" type="button">
+          <span>Close</span>
+          <div class="close-circle-btn">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div class="menu-content-grid">
+        <div class="menu-left-col">
+          <nav class="nav-links-large">
+            <a
+              class="menu-item view-switch-link"
+              data-target="academicsView"
+              style="--i: 1"
+              >Academics & Life</a
+            >
+            <a href="#projects" class="menu-item smooth-link" style="--i: 2"
+              >Digital Realities Ledger</a
+            >
+            <a href="#achievements" class="menu-item smooth-link" style="--i: 3"
+              >Impact & Credentials</a
+            >
+            <a href="#tech" class="menu-item smooth-link" style="--i: 4"
+              >Technical Arsenal</a
+            >
+          </nav>
+        </div>
+
+        <div class="menu-right-col">
+          <div class="menu-widget">
+            <span class="widget-tag">FEATURED ARCHITECTURE</span>
+            <h4>Startup Landing Page</h4>
+            <p>
+              Production-ready frontend architecture built using clean HTML5,
+              CSS3, sticky navigation, and custom form layouts.
+            </p>
+            <a
+              href="https://siddharth2580.github.io/startup-landing-page/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="widget-link"
+              >Explore Live System &nearr;</a
+            >
+          </div>
+
+          <div class="menu-sublinks">
+            <span class="widget-tag">QUICK DIRECTORY</span>
+            <div class="sublinks-grid">
+              <a
+                href="https://github.com/siddharth2580"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub Profile</a
+              >
+              <a class="view-switch-link" data-target="academicsView"
+                >Academic Records</a
+              >
+              <a href="#projects" class="smooth-link">Systems Ledger</a>
+              <a href="#tech" class="smooth-link">Engineering Tools</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-footer">
+        <span class="footer-label">Quick Links &rsaquo;</span>
+        <a
+          href="https://github.com/siddharth2580"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub Repositories</a
+        >
+        <a
+          href="https://siddharth2580.github.io/startup-landing-page/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Latest Project</a
+        >
+        <a href="#tech" class="smooth-link">Tech Stack</a>
+      </div>
+    </div>
+
+    <!-- ==================== VIEW 1: MAIN PORTAL VIEW ==================== -->
+    <div id="mainView" class="view-section active-view">
+      <!-- HERO SECTION -->
+      <section class="hero reveal-on-scroll" id="home">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+          <h1 class="animate-title">SIDDHARTH</h1>
+          <p class="animate-sub">
+            Crafting Digital Realities & Living Without Limits.
+          </p>
+          <a class="animate-btn view-switch-link" data-target="academicsView">
+            <span class="arrow">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+            Explore Universe
+          </a>
+        </div>
+      </section>
+
+      <!-- PHILOSOPHY SECTION -->
+      <section class="philosophy-section reveal-on-scroll" id="philosophy">
+        <div class="container">
+          <div class="section-label">CORE PHILOSOPHY</div>
+          <h2>Architecture Beyond Code, Life Without Constraints.</h2>
+          <p class="philosophy-text">
+            Siddharth Universe isn't just a repository of projects; it's a
+            living space where engineering precision meets philosophical
+            exploration. I build scalable digital systems while maintaining a
+            relentless pursuit of personal autonomy and global exploration.
+          </p>
+
+          <div class="philosophy-grid">
+            <div class="phil-card reveal-card">
+              <h3>01 / Engineering</h3>
+              <p>
+                Designing high-impact digital systems, clean infrastructure, and
+                modern software architectures.
+              </p>
+            </div>
+            <div class="phil-card reveal-card">
+              <h3>02 / Vision</h3>
+              <p>
+                Combining high-level strategic thinking with multi-disciplinary
+                continuous learning.
+              </p>
+            </div>
+            <div class="phil-card reveal-card">
+              <h3>03 / Exploration</h3>
+              <p>
+                Embracing adaptability, remote freedom, and living life without
+                arbitrary limits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POINT 4: HARVARD STYLE ACHIEVEMENTS & LEARNING SECTION -->
+      <section class="achievements-section reveal-on-scroll" id="achievements">
+        <div class="container">
+          <div class="section-label">IMPACT & KNOWLEDGE TRAJECTORY</div>
+
+          <!-- Wide Harvard Feature Banner -->
+          <div class="feature-spotlight-card reveal-card">
+            <div class="spotlight-image-placeholder">
+              <div class="spotlight-badge">FEATURED INITIATIVE</div>
+            </div>
+            <div class="spotlight-content">
+              <h2>One Change, One Impact</h2>
+              <p class="spotlight-desc">
+                Participated actively in the CU Online Debatrix Club initiative
+                focused on driving meaningful social change through persuasive
+                discourse, public policy analysis, and strategic communication.
+              </p>
+              <div class="spotlight-meta">
+                October 2026 • Leadership & Debating
+              </div>
+            </div>
+          </div>
+
+          <!-- 3-Column Harvard Grid Layout -->
+          <h3 class="sub-section-title" style="margin-top: 60px">
+            Continuous Learning & Upskilling
+          </h3>
+          <div class="profiles-grid">
+            <div class="profile-card reveal-card">
+              <div class="profile-img-box">
+                <span class="card-tag">ACADEMIC FOUNDATION</span>
+              </div>
+              <div class="profile-card-body">
+                <h4>PhysicsWallah</h4>
+                <p>
+                  Strengthening core problem-solving fundamentals, analytical
+                  mathematics, and structural logic.
+                </p>
+              </div>
+            </div>
+
+            <div class="profile-card reveal-card">
+              <div class="profile-img-box">
+                <span class="card-tag">GLOBAL LEARNING</span>
+              </div>
+              <div class="profile-card-body">
+                <h4>Udemy & edX</h4>
+                <p>
+                  Professional software development coursework, modern web
+                  architectures, and computer science modules.
+                </p>
+              </div>
+            </div>
+
+            <div class="profile-card reveal-card">
+              <div class="profile-img-box">
+                <span class="card-tag">TECHNICAL CAREER</span>
+              </div>
+              <div class="profile-card-body">
+                <h4>AccioJob</h4>
+                <p>
+                  Specialized full-stack web development training, algorithmic
+                  optimization, and production-grade coding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ENGINEERED SYSTEMS (LEDGER TABLE) -->
+      <section class="projects-section reveal-on-scroll" id="projects">
+        <div class="container">
+          <div class="section-label">ENGINEERED SYSTEMS</div>
+          <h2 class="section-title">Digital Realities Ledger</h2>
+
+          <div class="ledger-table">
+            <div
+              class="ledger-row reveal-row"
+              data-id="SYS-01"
+              data-cat="Frontend Architecture"
+              data-title="Startup Landing Page"
+              data-desc="Responsive startup landing page featuring a sticky navbar, interactive contact form, and structured data table built with HTML & CSS."
+              data-tech="HTML5,CSS3,Montserrat"
+              data-live="https://siddharth2580.github.io/startup-landing-page/"
+              data-repo="https://github.com/siddharth2580/startup-landing-page"
+            >
+              <div class="ledger-meta">
+                <span class="system-id">SYS-01</span>
+                <span class="system-category">Frontend Architecture</span>
+              </div>
+              <div class="ledger-content">
+                <h3>Startup Landing Page</h3>
+                <p>
+                  Responsive startup landing page featuring a sticky navbar,
+                  interactive contact form, and structured data table built with
+                  HTML & CSS.
+                </p>
+              </div>
+              <div class="ledger-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Montserrat</span>
+              </div>
+              <div class="ledger-arrow">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="ledger-row reveal-row"
+              data-id="SYS-02"
+              data-cat="Web Infrastructure"
+              data-title="High-Throughput Microservices"
+              data-desc="Distributed backend services engineered for low latency, secure data routing, and cloud scalability."
+              data-tech="Node.js,Docker,PostgreSQL"
+              data-live="#"
+              data-repo="#"
+            >
+              <div class="ledger-meta">
+                <span class="system-id">SYS-02</span>
+                <span class="system-category">Web Infrastructure</span>
+              </div>
+              <div class="ledger-content">
+                <h3>High-Throughput Microservices</h3>
+                <p>
+                  Distributed backend services engineered for low latency,
+                  secure data routing, and cloud scalability.
+                </p>
+              </div>
+              <div class="ledger-tech">
+                <span>Node.js</span>
+                <span>Docker</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="ledger-arrow">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="ledger-row reveal-row"
+              data-id="SYS-03"
+              data-cat="Systems Code"
+              data-title="Interactive Canvas UI Engine"
+              data-desc="Ultra-responsive, institutional web experiences focusing on minimalist aesthetics and smooth micro-interactions."
+              data-tech="TypeScript,WebGL,CSS3"
+              data-live="#"
+              data-repo="#"
+            >
+              <div class="ledger-meta">
+                <span class="system-id">SYS-03</span>
+                <span class="system-category">Systems Code</span>
+              </div>
+              <div class="ledger-content">
+                <h3>Interactive Canvas UI Engine</h3>
+                <p>
+                  Ultra-responsive, institutional web experiences focusing on
+                  minimalist aesthetics and smooth micro-interactions.
+                </p>
+              </div>
+              <div class="ledger-tech">
+                <span>TypeScript</span>
+                <span>WebGL</span>
+                <span>CSS3</span>
+              </div>
+              <div class="ledger-arrow">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK & TOOLS -->
+      <section class="tech-section reveal-on-scroll" id="tech">
+        <div class="container">
+          <div class="section-label">TECHNICAL ARSENAL</div>
+          <div class="tech-grid">
+            <div class="tech-box reveal-card">
+              <h4>Languages & Logic</h4>
+              <p>HTML5, CSS3, JavaScript, Python</p>
+            </div>
+            <div class="tech-box reveal-card">
+              <h4>Frameworks & Tools</h4>
+              <p>Git, GitHub, VS Code, Responsive Design</p>
+            </div>
+            <div class="tech-box reveal-card">
+              <h4>Systems & Infrastructure</h4>
+              <p>GitHub Pages Hosting, UI/UX Layouts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== VIEW 2: ACADEMICS & LIFE VIEW ==================== -->
+    <div id="academicsView" class="view-section">
+      <section class="page-banner">
+        <div class="container">
+          <div class="section-label">INSTITUTIONAL RECORDS</div>
+          <h1>Academic Chronicles & Life</h1>
+          <p>
+            Formal education trajectory, academic milestones, and specialized
+            credentials ledger.
+          </p>
+        </div>
+      </section>
+
+      <section class="academics-section">
+        <div class="container">
+          <h2 class="section-title">Education History</h2>
+
+          <div class="academic-timeline">
+            <div class="academic-card">
+              <div class="academic-year">2022 — 2026 [EXPECTED]</div>
+              <div class="academic-details">
+                <span class="inst-type">BACHELOR OF TECHNOLOGY / IT</span>
+                <h3>Your University / College Name</h3>
+                <p class="inst-location">
+                  City, State — Major in Information Technology
+                </p>
+                <p class="academic-desc">
+                  Focusing on computer science fundamentals, algorithm design,
+                  cloud infrastructure, and software engineering methodologies.
+                </p>
+                <div class="academic-tags">
+                  <span>Data Structures</span>
+                  <span>Web Architecture</span>
+                  <span>Database Systems</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="academic-card">
+              <div class="academic-year">2020 — 2022</div>
+              <div class="academic-details">
+                <span class="inst-type"
+                  >SENIOR SECONDARY SCHOOL (12TH CLASS)</span
+                >
+                <h3>Your High School Name</h3>
+                <p class="inst-location">
+                  Science Stream (Physics, Chemistry, Mathematics)
+                </p>
+                <p class="academic-desc">
+                  Completed senior secondary education with focus on analytical
+                  mathematics, core physics logic, and foundation computing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="certifications-block">
+            <h3 class="sub-section-title">
+              Certifications & Specialized Credentials
+            </h3>
+
+            <div class="certs-grid">
+              <div class="cert-card">
+                <div class="cert-header">
+                  <span class="cert-code">CERT-01</span>
+                  <span class="cert-date">2024</span>
+                </div>
+                <h4>Full-Stack Web Engineering</h4>
+                <p class="cert-issuer">Issued by: Course / Platform Name</p>
+                <p class="cert-desc">
+                  Mastered modern HTML5, CSS3 layout architecture, JavaScript
+                  DOM manipulation, and responsive web design.
+                </p>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-header">
+                  <span class="cert-code">CERT-02</span>
+                  <span class="cert-date">2023</span>
+                </div>
+                <h4>Data Structures & Algorithms</h4>
+                <p class="cert-issuer">Issued by: Academy / Institution Name</p>
+                <p class="cert-desc">
+                  In-depth problem solving, algorithmic thinking, array
+                  processing, and computational logic.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POINT 5: CLEAN INSTITUTIONAL FOOTER -->
+      <footer class="page-footer">
+        <div class="container">
+          <div class="footer-left">
+            <div class="footer-brand">SIDDHARTH UNIVERSE</div>
+            <p>&copy; 2026 SIDDHARTH UNIVERSE — All Rights Reserved.</p>
+          </div>
+          <div class="footer-right">
+            <a
+              href="https://github.com/siddharth2580"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-footer-link"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+              <span>GitHub / siddharth2580</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div class="project-modal-overlay" id="projectModal">
+      <div class="project-modal-card">
+        <div class="modal-header">
+          <span class="modal-system-id" id="modalId">SYS-01</span>
+          <button class="close-circle-btn" id="closeModal" type="button">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span class="modal-category" id="modalCategory"
+            >Frontend Architecture</span
+          >
+          <h2 id="modalTitle">Startup Landing Page</h2>
+          <p id="modalDesc">
+            Responsive startup landing page featuring a sticky navbar,
+            interactive contact form, and structured data table built with HTML
+            & CSS.
+          </p>
+
+          <div class="modal-tech-label">TECHNOLOGIES ENGAGED</div>
+          <div class="modal-tech" id="modalTech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Montserrat</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#"
+            id="modalLiveBtn"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="modal-action-btn primary-action"
+            >Launch Live System &nearr;</a
+          >
+          <a
+            href="#"
+            id="modalRepoBtn"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="modal-action-btn secondary-action"
+            >Source Code (GitHub) &nearr;</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
