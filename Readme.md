@@ -31,15 +31,15 @@ Built with a strong emphasis on performance, scalability, and user experience, t
 
 ## ⚙️ Technology Stack
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Semantic structure and markup |
-| CSS3 | Visual architecture and responsive styling |
-| JavaScript ES6+ | Application logic and interactions |
-| CSS Grid | Advanced layout composition |
-| Flexbox | Flexible alignment and positioning |
-| Browser History API | Navigation state synchronization |
-| DOM API | Event-driven interface management |
+| Technology          | Purpose                                    |
+| ------------------- | ------------------------------------------ |
+| HTML5               | Semantic structure and markup              |
+| CSS3                | Visual architecture and responsive styling |
+| JavaScript ES6+     | Application logic and interactions         |
+| CSS Grid            | Advanced layout composition                |
+| Flexbox             | Flexible alignment and positioning         |
+| Browser History API | Navigation state synchronization           |
+| DOM API             | Event-driven interface management          |
 
 ## 🏗️ Project Architecture
 
